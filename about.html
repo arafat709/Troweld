@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troweld</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        span {
+            color: #db792e;
+            text-transform: capitalize;
+        }
+
+        .container {
+            background-color: #003471;
+            padding: 10px 23px 10px 23px;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .container h1 {
+            font-size: 25px;
+            padding: 10px 0 10px 0;
+        }
+
+        .container i {
+            background-color: #159ec0;
+            padding: 10px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .container i:hover {
+            background-color: #Da7426;
+            transition: .5s;
+        }
+
+        .loc {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* 
+ */
+
+        .nav {
+            background-color: #003471;
+            padding: 20px 20px 20px 20px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            gap: 40px;
+        }
+
+        .nav ul li a:hover {
+            color: #Da7426;
+            transition: .5s;
+        }
+
+        .nav ul li a {
+            color: white;
+        }
+
+        .welcome .container {
+            background-color: white;
+            color: black;
+        }
+
+        .wel-left {
+            padding: 150px 0 0 50px;
+        }
+
+        .wel-left h1 {
+            text-transform: capitalize;
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+
+        span {
+            color: #Da7426;
+        }
+
+        .wel-left button {
+            padding: 12px 38px;
+            margin-top: 30px;
+            color: white;
+            background-color: #Da7426;
+            border: 1px solid #Da7426;
+            font-size: 16px;
+        }
+
+        .wel-left button:hover {
+            background: transparent;
+            color: #Da7426;
+            transition: .5s;
+        }
+
+        .welcome img {
+            padding: 80px 80px 0px 0;
+
+        }
+
+        footer .container h1 {
+            text-align: center;
+            font-size: 25px;
+            margin: 80px 0 50px 0;
+        }
+
+        footer .container h2 {
+            text-transform: uppercase;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        footer .container {
+            display: flex;
+            flex-direction: column;
+            background-color: #0c0c0c;
+            opacity: .9;
+            padding: 0 50px 50px 50px;
+            margin: 100px 0 0 0;
+        }
+
+        .oc {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .oc p {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .oc i {
+            background-color: #0c0c0c;
+            color: white;
+            padding: 15px 15px;
+            border: 1px solid #b85c15;
+            border-radius: 5px;
+        }
+
+        .useful-link ul {
+            list-style: none;
+        }
+
+        .useful-link ul li a {
+            color: white;
+            opacity: .4;
+            text-transform: capitalize;
+        }
+
+        .footer-middle {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer-middle p {
+            opacity: .4;
+        }
+
+        .useful-link {
+            padding: 10px 10px 50px 10px;
+        }
+
+        .useful-link {
+            padding: 10px 10px 50px 10px;
+        }
+
+        .welding {
+            padding: 10px 10px 50px 10px;
+        }
+
+        .social-media {
+            padding: 10px 10px 50px 10px;
+        }
+
+        .ouc {
+            padding: 10px 10px 50px 10px;
+        }
+
+        .social-media i {
+            background-color: #b85c15;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .input-mail {
+            width: 200px;
+            height: 40px;
+
+        }
+
+        /* .plac input[type="email"]{
+    position: relative;
+    display: inline-block;
+  } */
+        .plac i {
+            font-size: 15px;
+            color: white;
+            padding: 14.5px 13px;
+            background-color: #Da7426;
+            border-radius: 0;
+            margin-left: -4.5px;
+            /* position: absolute;
+    top: 0;
+    right: 0; */
+        }
+
+        .last-p {
+            text-align: center;
+            padding: 25px 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Tro<span>Weld</span></h1>
+            <div class="loc">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Location</p>
+            </div>
+            <div class="loc">
+                <i class="fa-solid fa-phone"></i>
+                <p>Call:+0037428981275</p>
+            </div>
+            <div class="loc">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Demo@gmail.com</p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="service.html">survices</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href=""><i class="fa-solid fa-user"></i></a>
+                <a href="">login</a>
+            </li>
+            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+    </div>
+
+    <section class="welcome">
+        <div class="container">
+            <div class="wel-left">
+                <h1>welcome to <span>Troweld</span></h1>
+                <p>Simply dummy text of the printing and typesetting industry. Lorem <br>Ipsum has been the industry's
+                    standard dummy text ever since the <br>1500s, when an unknown printer took a galley of type and
+                    scrambled <br>it to make a type specimen book. It has s</p>
+                <button>Read more</button>
+            </div>
+            <img src="images/about-img.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h1>Tro<span>Weld</span></h1>
+            <div class="footer-middle">
+                <div class="useful-link">
+                    <h2>useful link</h2>
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">services</a></li>
+                        <li><a href="">portfolio</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                </div>
+                <div class="welding">
+                    <h2>welding</h2>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur <br>adipiscinaliquaLoreadipiscing</p>
+                </div>
+                <div class="social-media">
+                    <h2>social media</h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="ouc">
+                    <h2>our welding center</h2>
+                    <p>Lorem ipsum dolor sit amet, <br>consectetur <br> adipiscinaliquaLoreadipiscing</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="oc">
+                    <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                    <p>Location</p>
+                </div>
+                <div class="oc">
+                    <a href=""><i class="fa-solid fa-phone"></i></i></a>
+                    <p>Call: +005781758718</p>
+                </div>
+                <div class="oc">
+                    <a href=""> <i class="fa-regular fa-envelope"></i></i></a>
+                    <p>Demo@gmail.com</p>
+                </div>
+                <div class="plac">
+                    <input class="input-mail" type="email" name="" placeholder="Enter Your Email">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <p class="last-p">
+            © 2024 All Rights Reserved By Free Html Templates
+        </p>
+    </footer>
+</body>
+
+</html>
